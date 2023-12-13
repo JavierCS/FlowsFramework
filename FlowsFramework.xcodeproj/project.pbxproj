@@ -11,6 +11,9 @@
 		7F1EDF8A2B2968DB00477A50 /* FlowsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EDF7F2B2968DB00477A50 /* FlowsFramework.framework */; };
 		7F1EDF8F2B2968DB00477A50 /* FlowsFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EDF8E2B2968DB00477A50 /* FlowsFrameworkTests.swift */; };
 		7F1EDF902B2968DB00477A50 /* FlowsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1EDF822B2968DB00477A50 /* FlowsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F1EE01F2B29974F00477A50 /* DependenciesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE01E2B29974F00477A50 /* DependenciesFramework.framework */; };
+		7F1EE0202B29974F00477A50 /* DependenciesFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE01E2B29974F00477A50 /* DependenciesFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F1EE0242B2997E500477A50 /* FFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EE0232B2997E500477A50 /* FFController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7F1EE0212B29974F00477A50 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F1EE0202B29974F00477A50 /* DependenciesFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7F1EDF7F2B2968DB00477A50 /* FlowsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlowsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1EDF822B2968DB00477A50 /* FlowsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowsFramework.h; sourceTree = "<group>"; };
 		7F1EDF832B2968DB00477A50 /* FlowsFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FlowsFramework.docc; sourceTree = "<group>"; };
 		7F1EDF892B2968DB00477A50 /* FlowsFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowsFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1EDF8E2B2968DB00477A50 /* FlowsFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowsFrameworkTests.swift; sourceTree = "<group>"; };
+		7F1EE01E2B29974F00477A50 /* DependenciesFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DependenciesFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1EE0232B2997E500477A50 /* FFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1EE01F2B29974F00477A50 /* DependenciesFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +76,7 @@
 				7F1EDF812B2968DB00477A50 /* FlowsFramework */,
 				7F1EDF8D2B2968DB00477A50 /* FlowsFrameworkTests */,
 				7F1EDF802B2968DB00477A50 /* Products */,
+				7F1EE01D2B29974F00477A50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +92,7 @@
 		7F1EDF812B2968DB00477A50 /* FlowsFramework */ = {
 			isa = PBXGroup;
 			children = (
+				7F1EE0222B2997D100477A50 /* TestGroup */,
 				7F1EDF822B2968DB00477A50 /* FlowsFramework.h */,
 				7F1EDF832B2968DB00477A50 /* FlowsFramework.docc */,
 			);
@@ -83,6 +105,22 @@
 				7F1EDF8E2B2968DB00477A50 /* FlowsFrameworkTests.swift */,
 			);
 			path = FlowsFrameworkTests;
+			sourceTree = "<group>";
+		};
+		7F1EE01D2B29974F00477A50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F1EE01E2B29974F00477A50 /* DependenciesFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F1EE0222B2997D100477A50 /* TestGroup */ = {
+			isa = PBXGroup;
+			children = (
+				7F1EE0232B2997E500477A50 /* FFController.swift */,
+			);
+			path = TestGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +145,7 @@
 				7F1EDF7B2B2968DB00477A50 /* Sources */,
 				7F1EDF7C2B2968DB00477A50 /* Frameworks */,
 				7F1EDF7D2B2968DB00477A50 /* Resources */,
+				7F1EE0212B29974F00477A50 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F1EDF842B2968DB00477A50 /* FlowsFramework.docc in Sources */,
+				7F1EE0242B2997E500477A50 /* FFController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +449,7 @@
 		7F1EDF972B2968DB00477A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S8N34947Y9;
@@ -425,6 +466,7 @@
 		7F1EDF982B2968DB00477A50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S8N34947Y9;
