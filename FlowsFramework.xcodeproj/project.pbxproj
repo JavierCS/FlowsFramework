@@ -14,6 +14,7 @@
 		7F1EE01F2B29974F00477A50 /* DependenciesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE01E2B29974F00477A50 /* DependenciesFramework.framework */; };
 		7F1EE0202B29974F00477A50 /* DependenciesFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE01E2B29974F00477A50 /* DependenciesFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7F1EE0242B2997E500477A50 /* FFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EE0232B2997E500477A50 /* FFController.swift */; };
+		7F5593BC2B2AA94900C9AAEB /* DependenciesPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 7F5593BB2B2AA94900C9AAEB /* DependenciesPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5593BC2B2AA94900C9AAEB /* DependenciesPackage in Frameworks */,
 				7F1EE01F2B29974F00477A50 /* DependenciesFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = FlowsFramework;
+			packageProductDependencies = (
+				7F5593BB2B2AA94900C9AAEB /* DependenciesPackage */,
+			);
 			productName = FlowsFramework;
 			productReference = 7F1EDF7F2B2968DB00477A50 /* FlowsFramework.framework */;
 			productType = "com.apple.product-type.framework";
@@ -201,6 +206,9 @@
 				Base,
 			);
 			mainGroup = 7F1EDF752B2968DB00477A50;
+			packageReferences = (
+				7F5593BA2B2AA94900C9AAEB /* XCRemoteSwiftPackageReference "DependenciesPackage" */,
+			);
 			productRefGroup = 7F1EDF802B2968DB00477A50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -511,6 +519,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F5593BA2B2AA94900C9AAEB /* XCRemoteSwiftPackageReference "DependenciesPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JavierCS/DependenciesPackage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F5593BB2B2AA94900C9AAEB /* DependenciesPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F5593BA2B2AA94900C9AAEB /* XCRemoteSwiftPackageReference "DependenciesPackage" */;
+			productName = DependenciesPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F1EDF762B2968DB00477A50 /* Project object */;
 }
