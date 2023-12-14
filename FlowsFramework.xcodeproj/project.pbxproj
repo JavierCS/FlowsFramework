@@ -11,8 +11,6 @@
 		7F1EDF8A2B2968DB00477A50 /* FlowsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EDF7F2B2968DB00477A50 /* FlowsFramework.framework */; };
 		7F1EDF8F2B2968DB00477A50 /* FlowsFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EDF8E2B2968DB00477A50 /* FlowsFrameworkTests.swift */; };
 		7F1EDF902B2968DB00477A50 /* FlowsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1EDF822B2968DB00477A50 /* FlowsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F1EE01F2B29974F00477A50 /* DependenciesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE01E2B29974F00477A50 /* DependenciesFramework.framework */; };
-		7F1EE0202B29974F00477A50 /* DependenciesFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE01E2B29974F00477A50 /* DependenciesFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7F1EE0242B2997E500477A50 /* FFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EE0232B2997E500477A50 /* FFController.swift */; };
 		7F5593BC2B2AA94900C9AAEB /* DependenciesPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 7F5593BB2B2AA94900C9AAEB /* DependenciesPackage */; };
 /* End PBXBuildFile section */
@@ -26,20 +24,6 @@
 			remoteInfo = FlowsFramework;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7F1EE0212B29974F00477A50 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7F1EE0202B29974F00477A50 /* DependenciesFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7F1EDF7F2B2968DB00477A50 /* FlowsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlowsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +41,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F5593BC2B2AA94900C9AAEB /* DependenciesPackage in Frameworks */,
-				7F1EE01F2B29974F00477A50 /* DependenciesFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +130,6 @@
 				7F1EDF7B2B2968DB00477A50 /* Sources */,
 				7F1EDF7C2B2968DB00477A50 /* Frameworks */,
 				7F1EDF7D2B2968DB00477A50 /* Resources */,
-				7F1EE0212B29974F00477A50 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
